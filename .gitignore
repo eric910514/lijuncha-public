@@ -1,0 +1,46 @@
+# 資料不進版本控制：人物、回覆、報告、測速紀錄（含電腦名稱）都在 out/。
+# 預設 out/ 在程式資料夾外面，這幾行是萬一放錯位置時的保險。
+out/
+out-*/
+tuning.json
+responses.jsonl*
+embeddings.json
+
+# 姓名資料檔：作者 10-18 決定放進儲存庫，讓使用者能自己產生並驗證人物（說明見 config/names/README.md）。
+# 原住民族名含族語發展會「版權所有」的資料庫內容，授權確認前仍不上傳；不再使用的舊檔也不上傳
+config/names/names_indigenous*.jsonl
+config/names/names_new_immigrant.jsonl
+# 下載的原始姓名資料與篩完的檔（例如 WGND 2.0 的 csv，91 MB）：一律不上傳
+config/names/raw/
+
+# 金鑰與個人設定：永遠不要提交
+.env
+.env.*
+*.key
+*.pem
+secrets*.json
+config.local.json
+
+# Python
+__pycache__/
+# python -m tests 記下的各測試耗時（只用來排順序）
+tests/.timings.json
+*.pyc
+.venv/
+venv/
+
+# 暫存與備份
+*.tmp
+*.bak
+
+# 文件匯出檔（以線上文件為準）
+*.docx
+*.pdf
+
+# 作業系統產生的檔案
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 保留題（不公開；企劃書 10-19）
+config/private/

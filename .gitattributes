@@ -1,0 +1,5 @@
+# Windows 與 Mac 的換行字元不同；交給 Git 自動轉換，避免同一個檔案在兩台電腦上看起來整份都改過
+* text=auto
+# 資料檔一律用 \n 換行：各平台取出的位元組相同，指紋（SHA-256）才比得起來
+*.jsonl text eol=lf
+config/names/manifest.json text eol=lf

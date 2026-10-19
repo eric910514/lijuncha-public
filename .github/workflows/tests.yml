@@ -1,0 +1,32 @@
+# 每次 PR 與推到 main 時自動跑測試：Linux 的最舊與最新 Python，加上 Windows（作者的機器）。
+# 測試不接 LM Studio（假資料與假伺服器），不需要金鑰，也不碰 out/ 的研究資料。
+name: tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: "3.9"
+          - os: ubuntu-latest
+            python: "3.13"
+          - os: windows-latest
+            python: "3.13"
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -r requirements.txt
+      - run: python -m tests
+        env:
+          PYTHONIOENCODING: utf-8

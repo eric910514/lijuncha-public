@@ -1,0 +1,65 @@
+{
+ "_說明": "姓名資料檔的指紋與來源；由 tools/names_manifest.py 產生，license 欄由作者填",
+ "files": {
+  "names_general.jsonl": {
+   "sha256": "d4e9a677450dbb14695ba8449e7e95dd32c61ed23892391f48f289c222b2b4a1",
+   "records": 540,
+   "sources": {
+    "MOI-112NAMESTAT": 540
+   },
+   "license": {
+    "MOI-112NAMESTAT": "政府資料開放授權條款－第1版（內政部戶政司〈政府網站資料開放宣告〉：網站上刊載的資料與素材採這個條款發布，https://www.ris.gov.tw/app/portal/133）；來源：《全國姓名統計分析》112年版；標示出處"
+   }
+  },
+  "names_foreign.jsonl": {
+   "sha256": "39679238176679f007c984e6fdbbdb852ec6216eb9f67a7be67633f4cdc40889",
+   "records": 1374,
+   "sources": {
+    "AUTHOR-LIST-2026": 169,
+    "CA-BABYNAMES": 201,
+    "INSEE-NOMS": 101,
+    "INSEE-PRENOMS-2025": 200,
+    "NRS-BABYNAMES-2025": 200,
+    "NRS-SURNAMES-2025": 101,
+    "NSW-BABYNAMES-2025": 201,
+    "SSA-BABYNAMES": 201
+   },
+   "license": {
+    "INSEE-PRENOMS-2025": "Licence Ouverte 2.0（Etalab）；標示出處：Insee",
+    "INSEE-NOMS": "Licence Ouverte 2.0（Etalab）；標示出處：Insee",
+    "NRS-BABYNAMES-2025": "Open Government Licence v3.0；標示出處：National Records of Scotland",
+    "NRS-SURNAMES-2025": "Open Government Licence v3.0；標示出處：National Records of Scotland",
+    "SSA-BABYNAMES": "美國聯邦政府著作，公有領域（Public Domain）；來源：U.S. Social Security Administration",
+    "NSW-BABYNAMES-2025": "CC BY 4.0；標示出處：NSW Registry of Births Deaths & Marriages",
+    "CA-BABYNAMES": "Open Government Licence – Ontario（安大略省嬰兒名字統計，企劃書 10-19 確認）；標示出處：Government of Ontario",
+    "AUTHOR-LIST-2026": "作者自製（程式對話依各國命名慣例草擬、作者採用），沒有第三方權利；隨程式一起以文件授權（CC BY 4.0）釋出"
+   }
+  },
+  "names_indigenous.jsonl": {
+   "sha256": "d3afc5661066f2a24232d0587b62c877ad0a929febb10cd8d8bb94a7df7afedd",
+   "records": 1584,
+   "sources": {
+    "CIP-COMMON-NAMES": 151,
+    "CIP-NAMING-CUSTOM": 16,
+    "ILRDF-NAME-DB": 1385,
+    "MOI-112NAMESTAT": 32
+   },
+   "license": {
+    "ILRDF-NAME-DB": "原住民族語言研究發展基金會人名資料庫，標示版權所有：未取得授權，這個檔不進版本控制",
+    "CIP-COMMON-NAMES": "原住民族委員會公開資料【待確認授權條款】",
+    "CIP-NAMING-CUSTOM": "原住民族委員會公開資料【待確認授權條款】",
+    "MOI-112NAMESTAT": "同 names_general.jsonl（政府資料開放授權條款－第1版）"
+   }
+  },
+  "names_foreign_test.jsonl": {
+   "sha256": "2a0906f3af1f46403ba748b6b4805dc18d3d4332f1c3459314d78cd68dd60e39",
+   "records": 800,
+   "sources": {
+    "FAKER-TEST": 800
+   },
+   "license": {
+    "FAKER-TEST": "測試用虛構資料（模仿 Faker 語系詞表，Faker 為 MIT 授權）；只供 gen --draft，正式人物不用"
+   }
+  }
+ }
+}

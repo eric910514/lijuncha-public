@@ -1,0 +1,4 @@
+numpy                         # NumFOCUS 社群（美國非營利組織）
+lmstudio; python_version >= "3.10"   # 詞彙層數 token 用（analyze --embed）；LM Studio 官方套件，Element Labs（美國）；要 Python 3.10 以上
+# 只有轉姓名資料時需要：openpyxl（tools/make_names_foreign.py）、faker（tools/make_test_names.py）
+# 不使用中國開發的套件（作者 10-16 決定）：簡繁轉換不用 OpenCC，改用 Unicode Unihan（tools/make_unihan_table.py）
